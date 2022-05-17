@@ -28,12 +28,10 @@ export class RegisterComponent implements OnInit {
       this._router.navigateByUrl('/logout');
     }
     this.registerForm = this.formBuilder.group({
-      firstName: ['', [Validators.required]],
-      lastName: ['', [Validators.required]],
+      name: ['', [Validators.required]],
       email: ['', [Validators.required]],
       password: ['', [Validators.required]],
       birthDate: ['', [Validators.required]],
-      userRole: ['', [Validators.required]],
     });
   }
   get f() {
