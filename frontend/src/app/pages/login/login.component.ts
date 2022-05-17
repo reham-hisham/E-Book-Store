@@ -42,11 +42,9 @@ export class LoginComponent implements OnInit {
           this.msg = 'Invalid email or password.';
         } else {
           localStorage.setItem('userToken', `bearer ${data.data.token}`);
-          if (data.data.userData.userRole == 'editor') {
             this._router
               .navigateByUrl('/editor')
               .then(() => window.location.reload());
-          }
         }
       });
     }
