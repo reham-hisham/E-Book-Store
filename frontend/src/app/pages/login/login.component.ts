@@ -43,7 +43,7 @@ export class LoginComponent implements OnInit {
         } else {
           localStorage.setItem('userToken', `bearer ${data.data.token}`);
             this._router
-              .navigateByUrl('/editor')
+              .navigateByUrl('/user')
               .then(() => window.location.reload());
         }
       });

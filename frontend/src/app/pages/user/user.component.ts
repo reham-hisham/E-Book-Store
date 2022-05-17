@@ -4,10 +4,10 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-editior',
-  templateUrl: './editior.component.html',
-  styleUrls: ['./editior.component.css'],
+  templateUrl: './user.component.html',
+  styleUrls: ['./user.component.css'],
 })
-export class EditiorComponent implements OnInit {
+export class UserComponent implements OnInit {
   constructor(private _auth: AuthService, private _router: Router) {}
 
   ngOnInit(): void {

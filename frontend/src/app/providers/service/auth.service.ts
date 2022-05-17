@@ -24,12 +24,6 @@ export class AuthService {
   logout(data: User): Observable<any> {
     return this._http.post(`${this.commonApiUrl}api/user/logout`, data);
   }
-  addPost(data: Post): Observable<any> {
-    return this._http.post(`${this.commonApiUrl}api/user/editor/addPost`, data);
-  }
-  showPosts(): Observable<any> {
-    return this._http.get(`${this.commonApiUrl}api/user/editor/showAllPosts`);
-  }
   me(): Observable<any> {
     return this._http.get(`${this.commonApiUrl}api/user/info`);
   }
